@@ -1,0 +1,364 @@
+/* http://meyerweb.com/eric/tools/css/reset/        
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+header {
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-right: 2em;
+    margin-left:2em;
+    height: auto;
+    width: auto;
+}
+/* Reset sheet */
+
+
+
+#main {/* algemene opmaak van de body */
+    width: auto;
+    height: auto;
+    margin-left: 2em;
+    margin-right: 2em;
+    border-top: 1em solid #D2527F;
+    background-color: #ffffff;
+
+}
+
+#mainbio { /* opmaak van de body bij biografie */
+    width: auto; 
+    margin-left: 2em;
+    margin-right: 2em;                
+    border-top: 1em solid #D2527F;
+    object-position: center;
+    background-color: #ffffff;
+
+}
+
+#maincontact{/* opmaak van de body bij contact */
+    margin-left: 2em;
+    margin-right: 2em;                 /*Het is heel irritant om constant naar boven te moeten scrollen om de website te navigeren, dus daarom is deze fixed*/
+    width: auto;
+    height: auto;
+    border-top: 1em solid #D2527F;
+    background-color: #ffffff;    
+}
+
+p.gallery {/*paragraaf opmaak plaatjes home pagina */
+    position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2.5em;
+    border-bottom: 6em solid white;
+}
+
+img.voorbeeld {/*Afmetingen van de plaatjes op de home pagina */
+    width: 30%;
+    height: 30%;
+}
+
+#divbio{/*Om de positie van de 2 div's goed te krijgen op de biografie pagina*/
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 6em solid white;
+}
+
+#fotoshanicediv {/*Ik geef aan hoe breed en hoog deze mag zijn*/
+    width: 40%;/* 60% over voor de tekst*/
+    display: flex; /* Om het plaatje te centreren */
+    justify-content: center;
+}
+
+#fotoshanice{ 
+    height: 90%; /* Het plaatje is door de telefoon lang gerekt, 90% ziet normaal uit */
+    width: 50%;
+}
+
+#artbio{ /* De div van de tekst van de biografie */
+    padding:5px;
+    width: 60%;
+}
+
+#ulfootercontact{ /*Contact gegevens footer*/
+    width:auto;
+    border: 2px solid #ffffff;
+    padding: 2em;
+}
+
+.footertext{ /*Tekst in de contactfooter */
+    height:auto;
+    font-size: 1em;
+    color: #ffffff;
+}
+
+.balklist{ /* De menubalk afmetingen */
+    width: 20%; 
+}   
+
+body { /* Achtergond op hele site */
+    background-image: url(images/backwall.jpg);
+    background-repeat: repeat;
+    background-position: center; 
+    background-size: 100% 100%;
+}
+
+h1 { /* Titel van de pagina*/
+    height: auto;
+    font-size: 3em;
+    font-family: 'Cardo', serif;
+    text-align: center;
+    background-color: #ffffff;
+    padding-top:0.5em;
+    padding-bottom: 0.5em;
+    width: auto;
+    left: 2em;
+    right: 2em;
+    color: #303030;
+}
+
+#homeheader{ /*Iets andere opmaak, anders dubbele padding*/
+    height: auto;
+    font-size: 3em;
+    font-family: 'Cardo', serif;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ffffff;
+    border-style: none;
+    width: auto;
+    left: 2em;
+    right: 2em;
+    color: #303030;
+}
+
+p.balktext { /*De tekst in de menubalk*/
+    line-height: 2em;
+    font-size: 1.3em;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+}
+
+p { /* Algemene opmaak en grootte paragraph*/
+    font-size: 1.3em;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+    
+}
+
+.pbio { /*Tekst van de biografie*/
+    position: center;
+    width: auto;
+    margin-left: 2em;
+    padding-top: 2%;
+    font-size: 1.3em;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #303030;
+}
+
+#menubalk { /*Opmaak en positionering van de elementen in de menubalk met flex*/
+    height: 2.5em;
+    width: auto;
+    display: flex;
+    list-style-type: none;
+    object-position: center;
+    background-color: #303030;
+}
+
+p.contacttext{ /*De tekst op de contactpagina*/
+    margin-left: 1em;
+    font-size: 1.5em;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+}
+
+
+li a { /* Opmaak van de geselcteerde knop in de balk*/
+    height: 2.5em;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+}
+
+p.balktext:hover { /*Hover kleurtje*/
+    background-color: #D2527F;
+
+}
+#contactflex { /*Om de div's in de contact pagina te positioneren*/
+    display: flex;
+    justify-content: center;
+    object-position: center;
+    background-color: #D2527F;
+    border-bottom: 6em solid #ffffff;
+}
+
+.active { /*Kleurtje van de geselecteerde knop*/
+    background-color: #D2527F;
+    color: #ffffff;
+}
+
+#googlemaps{ /* Grootte van de google map div*/
+    width:75%;
+}
+
+#googlemaps iframe {/*Om gebruik te maken van de volledige div*/
+    width: 100%; 
+    height: 100%;
+}
+
+#ulcontact { /* De div met plaatjes en tekst op de contact pagina*/
+    height: auto;
+    width: 25%;
+    background-color: #D2527F;
+    padding-top: 7em;
+    padding-bottom: 3em;
+    color: #ffffff;
+}
+
+#ulbehandelingen { /* 2 verschillende div's moeten worden gepositioneerd*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+    width: auto;
+    padding: 3em;
+}
+
+#behandelingendiv{ /* Opmaak en positionering in de div*/
+    background-color: #D2527F;
+    border-bottom: 6em solid #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+p.behandelingentext {/* De tekst in de linkse list*/
+    line-height: 2.5em;
+    margin-left: 1em;
+    padding-right: 1em;
+    font-size: 1.3em;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+}
+
+p.behandelingenprijs {/* De tekst in de rechtse list*/
+    line-height: 2.5em;
+    margin-right: 1em;
+    font-size: 1.3em;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+}
+
+img.contactimage{ /*De contactplaatjes grootte en opmaak*/
+    height: 3em;
+    width: 3em;
+}
+#contactplaatjes{/* Positionering van de plaatjes in de div*/
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#facebook {/* Margin voor de footer*/
+    margin-top: 5em;
+}
+
+#faqdiv { /*Zodat de tekst div naast het plaatje staat*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 6em solid white;
+}
+
+p.pfaqvraag{ /*De opmaak van de vragen in de faq*/
+    position: center;
+    width: auto;
+    margin-left: 2em;
+    padding-bottom: 1%;
+    font-size: 1.5em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    color: #303030;
+}
+
+p.pfaqantwoord{/* De opmaak van de antwoorden in de div*/
+    position: center;
+    width: auto;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding-bottom: 1%;
+    font-size: 1.3em;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #303030;
+}
+#salonfoto {
+    padding-top: 2%;/* ZOdat deze netjes naast de tekst wordt gepositioneerd*/
+    height: 100%;
+    width: auto;
+}
+
+footer { /* De opmaak van de footer, zodat alle elementel netjes wordt gepositioneerd*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    bottom: 0;
+    border-top: 1em solid #D2527F;
+    height: auto;
+    width: auto;
+    background-color: #303030;
+    color: #ffffff;
+}
